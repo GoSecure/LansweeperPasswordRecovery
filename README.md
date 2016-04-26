@@ -1,6 +1,7 @@
 # LansweeperPasswordRecovery
 Lansweeper 5 Password Recovery Tool
 
+For more information see our blog post: http://blog.gosecure.ca/2016/04/21/your-credentials-at-risk-with-lansweeper-5/
 
 ## Installation
 

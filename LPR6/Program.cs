@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Lansweeper 6 Password Recovery tool.
+ * by Martin Lemay, GoSecure Canada Inc. 2016
+ * 
+ * You need the encryption key file located in %Lansweeper Install Folder%\Key\Encryption.txt
+ * You also need a text file with encrypted passwords. Refer to the Test_Ciphers_File.txt file at the 
+ * root of the current VC project.
+ */
+using System;
 
 namespace Lansweeper6_PasswordRecovery
 {

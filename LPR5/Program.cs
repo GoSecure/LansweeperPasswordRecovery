@@ -7,7 +7,7 @@
  */
 using System;
 
-namespace LPR
+namespace LPR5
 {
     class Program
     {

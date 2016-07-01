@@ -2,7 +2,7 @@
 using System.Text;
 using System.Diagnostics;
 
-namespace LPR
+namespace LPR5
 {
     public class Crypto
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace LPR
+namespace LPR5
 {
     public class XTea
     {

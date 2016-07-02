@@ -1,21 +1,19 @@
 ﻿/*
- * Lansweeper 5 Password Recovery tool.
+ * Lansweeper 4 & 5 Password Recovery tool.
  * by Martin Lemay, GoSecure Canada Inc. 2016
  * 
- * Yeah... their Xtea implementation sucks so much that I won't bother translating it to Python.
- * ...and yes... I did import Lansweeper.dll.
+ * Update: Finally implemented the Xtea stuff. No need for the dependency anymore.
  * 
  */
 using System;
-using LS;
 
-namespace LPR
+namespace LPR5
 {
     class Program
     {
         static void usage()
         {
-            Console.WriteLine("[*] Usage: lpr.exe <encrypted password>");
+            Console.WriteLine("[*] Usage: LPR4and5.exe <encrypted password>");
             Console.ReadLine();
         }
         static void Main(string[] args)
@@ -30,7 +28,7 @@ namespace LPR
             Console.WriteLine(string.Format("[*] Decrypting Lansweeper Password: {0}\n[*] Note that this operation will NOT take a while...", password));
             
             
-            String result = Password.DecryptPassword(password);
+            String result = Crypto.DecryptPassword(password);
             Console.WriteLine(string.Format("\n[-] Recovered: {0}", result));
             Console.ReadLine();
         }
